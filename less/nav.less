@@ -1,0 +1,42 @@
+			nav{
+	&#top-menu{
+		@media (min-width: @screen-sm-min) { 
+			.navbar-collapse{
+				padding-right: 0;
+				padding-left: 0;
+			}
+		}
+		&.navbar-default{
+			.sidebar-top{
+				padding: 8px 0;
+				small{
+					float: left;
+					padding: 8px 10px 8px 0;
+				}
+			}
+			.topSocials{
+				.sidebar-top{
+					padding: 8px 0;
+					@media (min-width: @screen-md-min) { text-align: right; }
+					text-align: right;
+					a{
+						padding-left: 0.5rem;
+						&:hover{
+							text-decoration: none;
+						}
+					}
+				}
+			}
+		}
+	}
+	&#main-menu{
+		.roundCorners();
+	}
+}
+
+
+
+
+
+
+

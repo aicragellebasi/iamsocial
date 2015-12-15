@@ -1,0 +1,104 @@
+@import "bootstrap/bootstrap.less";
+@import "font-awesome/font-awesome.less";
+@import "variables.less";
+@import "mixins.less";
+@import "wp-core.less"; // TODO: Write with LESS convention. /*TODO: Find out their purpose and style consequently*/
+@import "nav.less"; // TODO Rename this or rearrange... it has Primary menu styles and topSocial / Igual poner in header... Just an idea...
+@import "header.less";
+@import "slider.less";
+@import "masonry.less";
+@import "single.less";
+@import "page.less";
+@import "sidebar.less"; // inlcude all sidebar styles here (top nav right widget, main right sidebar, footer widgets)
+@import "footer.less";
+@import "forms.less";
+@import "comments.less";
+@import "colors.less"; 
+@import "accessibility.less"; 
+
+html, body{ 
+	font-size: 16px;
+	box-sizing: border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing: border-box; 
+	margin: 0;
+	//outline: none;
+} 
+*, *:before, *:after { 
+	box-sizing: inherit; 
+	-moz-box-sizing: inherit;
+	-webkit-box-sizing: inherit;
+	//outline: none;
+}
+a:link, a:visited, a:hover, a:active{
+	//outline: none;
+	text-decoration: none;
+}
+a:focus{
+	//outline: none;
+}
+.container{
+	max-width: 960px;
+}
+
+h1{font-size: 2rem; }
+h2, h3{font-size: 1.4rem;}
+
+article,
+#respond{ // Common to all single, page, 404 etc articles.
+	margin: 0;
+	.marginBottom();
+	padding: 1rem;
+	width: 100%;
+	.roundCorners();
+	h2, h3{
+		margin-top: 0;
+	}
+	img{
+		.img-responsive();
+	}
+	//float: left;
+	/*TODO: I took the "pagination" class because of problem of mergins. But I need to put back the colors 
+	&.pagination{
+		.roundCorners();
+		a{
+			color: @brand-complementary;
+			&:hover{
+				color: @brand-complementary-secondary;
+			}
+		}
+	}*/
+}
+
+figure img{
+	width: 100%;
+	height: auto;
+	.img-responsive();
+}
+img.avatar{
+	.roundCorners();
+}
+
+/*PINGBACK & TRACKBACK*/
+.pingback, .trackback{
+	list-style-type: none;
+	.comment-body{
+		.roundCorners();
+		.marginBottom();
+		padding: 1rem;
+		width: 100%;
+	}
+}
+
+/*TABLES*/
+table{
+	.table();
+	.table-hover();
+	.table-bordered();
+}
+
+
+
+
+
+

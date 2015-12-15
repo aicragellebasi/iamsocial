@@ -1,0 +1,22 @@
+.Borders(@color: red) {
+  border: 1px solid @color;
+}
+.roundCorners(@radius: 25px) {
+	border-top-right-radius: @radius;
+	border-bottom-right-radius: @radius;
+	border-bottom-left-radius: @radius;
+}
+.marginTop(@size: 1rem){
+	margin-top: @size;
+}
+.marginBottom(@size: 1rem){
+	margin-bottom: @size;
+}
+.background-gradient(@start, @stop) {
+	background: mix(@start, @stop, 50%);
+	background: -webkit-gradient(linear, left top, left bottom, from(@start), to(@stop));
+	background: -webkit-linear-gradient(top, @start, @stop);
+	background: -moz-linear-gradient(top, @start, @stop);
+	background: -o-linear-gradient(top, @start, @stop);
+	background: linear-gradient(to bottom, @start, @stop);
+} 

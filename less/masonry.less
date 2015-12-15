@@ -1,0 +1,158 @@
+/* Masonry Custom CSS  */
+
+/* Masonry container HOMEPAGE */
+body.blog section#masonryContainer,
+body.search section#masonryContainer {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+	-moz-column-gap: 1rem;
+	-webkit-column-gap: 1rem;
+	column-gap: 1rem;
+}
+
+/* Masonry container ARCHIVE CATEGORIES */
+body.archive section#masonryContainer {
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	column-count: 2;
+	-moz-column-gap: 1rem;
+	-webkit-column-gap: 1rem;
+	column-gap: 1rem;
+}
+
+/* Childs */
+body.blog article, 
+body.archive article,
+body.search article {
+	//background-color: @gray-brand;
+	.background-gradient(white, @gray-brand); 
+	.Borders(@gray-brand);
+	display: inline-block;
+	//margin: 0 0 1em;
+	margin: 0;
+	//margin-bottom: 1rem;
+	.marginBottom();
+	padding: 1rem;
+	width: 100%;
+	.roundCorners();
+	.metas{
+		margin-top: 10px;
+	}
+	small{
+		a{
+			text-decoration: none;
+		}
+		&.comments{
+			a{
+				i{
+					color: @text-color;
+				}
+			}
+		}
+		&.readmore{
+			a{
+				//color: @brand-secondary;
+				font-weight: bold;
+			}
+		}
+	}
+
+/* Finally I am not using this but let´s keep it for now
+	header{
+		border-top-right-radius: 25px;
+		margin: -1rem -1rem 1rem -1rem;
+		padding: 1rem 1rem 0.5rem 1rem;
+		background-color: @brand-primary;
+
+		h2 a{
+			color:  @gray-brand;
+		}
+	}
+*/
+}
+
+/* Childs */
+
+/*TODO: Nest this into section#masonryContainer{} ????
+Or see if I really need this */
+body.archive .archive-header, body.blog .paging-navigation, body.archive .paging-navigation {
+	background-color: #ffffff;
+	-webkit-column-span: all;
+	column-span: all;
+}
+
+/* Some ad hoc CSS useful for many themes 
+body.archive .site-content,
+body.blog .site-content {
+margin: 1em;
+}*/
+
+/*TODO: Nest this into section#masonryContainer{} ????
+Or see if I really need this */
+h1, h2, h3, h4, h5, h6, a {
+-ms-word-wrap: break-word;
+word-wrap: break-word;
+}
+
+
+@media only screen and (max-width : 1024px) {
+
+	body.blog section#masonryContainer { 
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+	}
+
+	 body.archive section#masonryContainer { 
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	column-count: 2;
+	}
+}
+
+@media only screen and (max-device-width : 1024px) and (orientation : portrait) {
+
+	body.blog section#masonryContainer { 
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	column-count: 2;
+	}
+
+	/*TODO Chech here in iPad hor____ */
+	body.archive section#masonryContainer { 
+	-moz-column-count: 1;
+	-webkit-column-count: 1;
+	column-count: 1;
+	}
+}
+
+@media only screen and (max-width : 768px) {
+
+	body.blog section#masonryContainer { 
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	column-count: 2;
+	//.Borders();
+	}
+
+	 body.archive section#masonryContainer { 
+	-moz-column-count: 1;
+	-webkit-column-count: 1;
+	column-count: 1;
+	//.Borders(pink);
+	}
+}
+
+@media only screen and (max-width : 480px) {
+
+	body.blog section#masonryContainer, body.archive section#masonryContainer { 
+	-moz-column-count: 1;
+	-webkit-column-count: 1;
+	column-count: 1;
+	}
+}
+
+
+
+
