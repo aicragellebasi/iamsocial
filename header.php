@@ -97,7 +97,7 @@
 					<?php if ( get_header_image() ) { ?>
 						<div class="sitelogo">
 							<a href="<?php echo esc_url( home_url() ); ?>">
-								<img src="<?php header_image(); ?>" height="<?php esc_attr_e( get_custom_header()->height,'iamsocial' ); ?>" width="<?php esc_attr_e( get_custom_header()->width, 'iamsocial' ); ?>" alt="<?php esc_attr_e( 'Logo', 'iamsocial' ); ?>" class="img-responsive"  id='logo' />
+								<img src="<?php header_image(); ?>" height="<?php esc_attr( get_custom_header()->height,'iamsocial' ); ?>" width="<?php esc_attr( get_custom_header()->width, 'iamsocial' ); ?>" alt="<?php esc_attr_e( 'Logo', 'iamsocial' ); ?>" class="img-responsive"  id='logo' />
 							</a>
 						</div>
 					<?php } ?>
