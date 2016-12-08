@@ -3,7 +3,7 @@
  * Include the search form in the top nav bar, formatted with Bootstrap styles
  *
  * @package WordPress
- * @subpackage IAMSocial 2.0
+ * @subpackage IAMSocial 1.0.8
  * @since IAMSocial 1.0.0
  */
 ?>

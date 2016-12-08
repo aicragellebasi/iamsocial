@@ -2,14 +2,41 @@ header{
 	&#header{
 		//.Borders();
 		.marginBottom();
-		img{
-			&#logo{
-				.roundCorners();
+		.sitelogo{
+			//float: left;
+			//margin-right: 1em;
+			text-align: center;
+			display: flex;
+  			align-items: center;
+  			justify-content: center;
+			img{
+				&#logo{
+					.roundCorners();
+					max-width: 300px;
+				}	
 			}	
 		}
+		.sitetitle{
+			text-align: center;
+		}
+		
 		a{
 			&:hover{
 				text-decoration: none;
+			}
+		}
+	}
+}
+
+@media (min-width: @screen-sm) { 
+	header{
+		&#header{
+			.sitelogo{
+				float: left;
+				margin-right: 1em;
+			}
+			.sitetitle{
+				text-align: left;
 			}
 		}
 	}

@@ -3,7 +3,7 @@
  * The template for displaying all single posts
  *
  * @package WordPress
- * @subpackage IAMSocial 2.0
+ * @subpackage IAMSocial 1.0.8
  * @since IAMSocial 1.0.0
  */
 ?>
@@ -18,5 +18,4 @@
 				<?php get_sidebar(); ?>
 			</aside>
 		</div>
-
 <?php get_footer(); ?>

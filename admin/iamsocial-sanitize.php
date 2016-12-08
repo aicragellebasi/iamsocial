@@ -111,12 +111,12 @@ function iamsocial_sanitize_email( $email, $setting ) {
 
 
 function iamsocial_sanitize_hex_color( $color ) {
-    if ( '' === $color )
-        return '';
+	if ( '' === $color )
+		return '';
  
-    // 3 or 6 hex digits, or the empty string.
-    if ( preg_match('|^#([A-Fa-f0-9]{3}){1,2}$|', $color ) )
-        return $color;
+	// 3 or 6 hex digits, or the empty string.
+	if ( preg_match('|^#([A-Fa-f0-9]{3}){1,2}$|', $color ) )
+		return $color;
 }
 
 
@@ -164,20 +164,20 @@ function iamsocial_sanitize_image( $image, $setting ) {
 	 *
 	 * The array includes image mime types that are included in wp_get_mime_types()
 	 */
-    $mimes = array(
-        'jpg|jpeg|jpe' => 'image/jpeg',
-        'gif'          => 'image/gif',
-        'png'          => 'image/png',
-        'bmp'          => 'image/bmp',
-        'tif|tiff'     => 'image/tiff',
-        'ico'          => 'image/x-icon'
-    );
+	$mimes = array(
+		'jpg|jpeg|jpe' => 'image/jpeg',
+		'gif'          => 'image/gif',
+		'png'          => 'image/png',
+		'bmp'          => 'image/bmp',
+		'tif|tiff'     => 'image/tiff',
+		'ico'          => 'image/x-icon'
+	);
 
 	// Return an array with file extension and mime_type.
-    $file = wp_check_filetype( $image, $mimes );
+	$file = wp_check_filetype( $image, $mimes );
 
 	// If $image has a valid mime_type, return it; otherwise, return the default.
-    return ( $file['ext'] ? $image : $setting->default );
+	return ( $file['ext'] ? $image : $setting->default );
 }
 
 /**

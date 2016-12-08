@@ -3,7 +3,7 @@
  * The template for displaying search results pages.
  *
  * @package WordPress
- * @subpackage IAMSocial 2.0
+ * @subpackage IAMSocial 1.0.8
  * @since IAMSocial 1.0.0
  */
 ?>
@@ -12,6 +12,5 @@
 		<section id="masonryContainer" class="content">
 			<?php get_template_part( 'part' , 'content' ); ?>
 		</section>
-
 
 <?php get_footer(); ?>

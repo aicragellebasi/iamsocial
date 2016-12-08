@@ -3,7 +3,7 @@
  * The template for displaying 404 pages (Not Found)
  *
  * @package WordPress
- * @subpackage IAMSocial 2.0
+ * @subpackage IAMSocial 1.0.8
  * @since IAMSocial 1.0.0
  */
 ?>
@@ -12,8 +12,8 @@
 			<div class="col-md-9">
 				<section class="content">
 					<article>
-						<h2><?php _e('Oops...', 'iamsocial'); ?></h2>
-						<p><?php _e('We cannot find what you are looking for.', 'iamsocial'); ?> <a href="<?php echo esc_url(home_url()); ?>"><?php _e('Try again.', 'iamsocial'); ?></a></p>
+						<h2><?php esc_html_e( 'Oops...', 'iamsocial' ); ?></h2>
+						<p><?php esc_html_e( 'We cannot find what you are looking for.', 'iamsocial' ); ?> <a href="<?php echo esc_url( home_url() ); ?>"><?php esc_html_e( 'Try again.', 'iamsocial' ); ?></a></p>
 					</article>
 				</section>
 			</div>

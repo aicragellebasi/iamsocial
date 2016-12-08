@@ -5,7 +5,7 @@
  * Displays all of the <head> section and everything up till <section>
  *
  * @package WordPress
- * @subpackage IAMSocial 2.0
+ * @subpackage IAMSocial 1.0.8
  * @since IAMSocial 1.0.0
  */
 ?>
@@ -38,51 +38,51 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-8 visible-sm-inline-block visible-md-inline-block visible-lg-inline-block ">
-					<?php get_sidebar('top-bar'); ?>
+					<?php get_sidebar( 'top-bar' ); ?>
 				</div>
 				<nav class="col-sm-4 topSocials">
 					<div class="sidebar-top">
 						<?php
-						if (get_theme_mod('icon1_link')) { ?>
-						<a href="<?php echo esc_url(get_theme_mod('icon1_link')); ?>" target="_blank"> 
-                        	<i class="fa fa-facebook-square fa-2x"></i>
-                    	</a>
-                    	<?php } 
-                    	if (get_theme_mod('icon2_link')) { ?>
-						<a href="<?php echo esc_url(get_theme_mod('icon2_link')); ?>" target="_blank"> 
-                        	<i class="fa fa-twitter-square fa-2x"></i>
-                    	</a>
-                    	<?php } 
-                    	if (get_theme_mod('icon3_link')) { ?>
-						<a href="<?php echo esc_url(get_theme_mod('icon3_link')); ?>" target="_blank"> 
-                        	<i class="fa fa-google-plus-square fa-2x"></i>
-                    	</a>
-                    	<?php } 
-                    	if (get_theme_mod('icon4_link')) { ?>
-						<a href="<?php echo esc_url(get_theme_mod('icon4_link')); ?>" target="_blank"> 
-                        	<i class="fa fa-instagram fa-2x"></i>
-                    	</a>
-                    	<?php } 
-                    	if (get_theme_mod('icon5_link')) { ?>
-						<a href="<?php echo esc_url(get_theme_mod('icon5_link')); ?>" target="_blank"> 
-                        	<i class="fa fa-linkedin-square fa-2x"></i>
-                    	</a>
-                    	<?php } 
-                    	if (get_theme_mod('icon6_link')) { ?>
-						<a href="<?php echo esc_url(get_theme_mod('icon6_link')); ?>" target="_blank"> 
-                        	<i class="fa fa-youtube-square fa-2x"></i>
-                    	</a>
-                    	<?php } 
-                    	if (get_theme_mod('icon7_link')) { ?>
-						<a href="<?php echo esc_url(get_theme_mod('icon7_link')); ?>" target="_blank"> 
-                        	<i class="fa fa-pinterest-square fa-2x"></i>
-                    	</a>
-                    	<?php } 
-                    	if (get_theme_mod('icon8_link')) { ?>
-						<a href="<?php echo esc_url(get_theme_mod('icon8_link')); ?>" target="_blank"> 
-                        	<i class="fa fa-tumblr-square fa-2x"></i>
-                    	</a>
-                    	<?php } ?>
+						if ( get_theme_mod( 'icon1_link' ) ) { ?>
+						<a href="<?php echo esc_url( get_theme_mod( 'icon1_link' ) ); ?>" target="_blank"> 
+							<i class="fa fa-facebook-square fa-2x"></i>
+						</a>
+						<?php }
+						if ( get_theme_mod( 'icon2_link' ) ) { ?>
+						<a href="<?php echo esc_url( get_theme_mod( 'icon2_link' ) ); ?>" target="_blank"> 
+							<i class="fa fa-twitter-square fa-2x"></i>
+						</a>
+						<?php }
+						if ( get_theme_mod( 'icon3_link' ) ) { ?>
+						<a href="<?php echo esc_url( get_theme_mod( 'icon3_link' ) ); ?>" target="_blank"> 
+							<i class="fa fa-google-plus-square fa-2x"></i>
+						</a>
+						<?php }
+						if ( get_theme_mod( 'icon4_link' ) ) { ?>
+						<a href="<?php echo esc_url(get_theme_mod( 'icon4_link' ) ); ?>" target="_blank"> 
+							<i class="fa fa-instagram fa-2x"></i>
+						</a>
+						<?php }
+						if ( get_theme_mod( 'icon5_link' ) ) { ?>
+						<a href="<?php echo esc_url( get_theme_mod( 'icon5_link' ) ); ?>" target="_blank"> 
+							<i class="fa fa-linkedin-square fa-2x"></i>
+						</a>
+						<?php }
+						if ( get_theme_mod( 'icon6_link' ) ) { ?>
+						<a href="<?php echo esc_url( get_theme_mod( 'icon6_link' ) ); ?>" target="_blank"> 
+							<i class="fa fa-youtube-square fa-2x"></i>
+						</a>
+						<?php }
+						if ( get_theme_mod( 'icon7_link' ) ) { ?>
+						<a href="<?php echo esc_url( get_theme_mod( 'icon7_link' ) ); ?>" target="_blank"> 
+							<i class="fa fa-pinterest-square fa-2x"></i>
+						</a>
+						<?php }
+						if ( get_theme_mod( 'icon8_link' ) ) { ?>
+						<a href="<?php echo esc_url( get_theme_mod( 'icon8_link' ) ); ?>" target="_blank"> 
+							<i class="fa fa-tumblr-square fa-2x"></i>
+						</a>
+						<?php } ?>
 					</div>
 				</nav>
 			</div>
@@ -93,18 +93,18 @@
 	<div class="container" role="main"> <!-- this will close in footer.php -->
 		<header id="header">
 			<div class="row">
-			<?php if ( get_header_image() ) { ?>
-				<div class="col-sm-3">
-					<a href="<?php echo esc_url(home_url()); ?>">
-						<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php esc_attr_e( 'Logo', 'iamsocial' ); ?>" class="img-responsive"  id='logo' />
-					</a>
-				</div>
-				<div class="col-sm-9">
-				<?php } else { ?>
-				<div class="col-md-12">
-				<?php } ?>
-					<h1><a href="<?php echo esc_url(home_url()); ?>"><?php bloginfo('name'); ?></a></h1>
-					<h2><a href="<?php echo esc_url(home_url()); ?>"><?php bloginfo('description'); ?></a></h2>
+				<div class="col-sm-12">
+					<?php if ( get_header_image() ) { ?>
+						<div class="sitelogo">
+							<a href="<?php echo esc_url( home_url() ); ?>">
+								<img src="<?php header_image(); ?>" height="<?php esc_attr_e( get_custom_header()->height,'iamsocial' ); ?>" width="<?php esc_attr_e( get_custom_header()->width, 'iamsocial' ); ?>" alt="<?php esc_attr_e( 'Logo', 'iamsocial' ); ?>" class="img-responsive"  id='logo' />
+							</a>
+						</div>
+					<?php } ?>
+						<div class="sitetitle">
+							<h1><a href="<?php echo esc_url( home_url() ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+							<h2><a href="<?php echo esc_url( home_url() ); ?>"><?php bloginfo( 'description' ); ?></a></h2>
+						</div>
 				</div>
 			</div>
 		</header>
@@ -114,30 +114,30 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="navbar-header">
-			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu-list">
-			        <span class="sr-only"><?php _e('Toggle navigation','iamsocial'); ?></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			      </button>
-			    </div>
-			    <?php
-		            wp_nav_menu( array(
-            			'theme_location'    => 'primary',
-		                'depth'             => 2,
-		                'container'         => 'div',
-		                'container_class'   => 'collapse navbar-collapse',
-		        		'container_id'      => 'main-menu-list',
-		                'menu_class'        => 'nav navbar-nav',
-		                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-		                'walker'            => new wp_bootstrap_navwalker())
-		            );
-		        ?>
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu-list">
+					<span class="sr-only"><?php _e('Toggle navigation','iamsocial'); ?></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				</div>
+				<?php
+					wp_nav_menu( array(
+						'theme_location'    => 'primary',
+						'depth'             => 2,
+						'container'         => 'div',
+						'container_class'   => 'collapse navbar-collapse',
+						'container_id'      => 'main-menu-list',
+						'menu_class'        => 'nav navbar-nav',
+						'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+						'walker'            => new wp_bootstrap_navwalker())
+					);
+				?>
 			</div>
 		</div>
 	</nav>		
 
-	       
+		   
 
 
 

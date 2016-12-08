@@ -5,11 +5,11 @@
  * Learn more: {@link https://developer.wordpress.org/themes/template-files-section/page-template-files/page-templates/}
  *
  * @package WordPress
- * @subpackage IAMSocial 2.0
+ * @subpackage IAMSocial 1.0.8
  * @since IAMSocial 1.0.0
  */
 ?>
-<?php 
+<?php
 /**
  * Template Name: Full Width Template
  */
@@ -21,5 +21,4 @@ get_header(); ?>
 				</section>
 			</div>
 		</div>
-
 <?php get_footer(); ?>

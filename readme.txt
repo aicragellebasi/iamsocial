@@ -2,10 +2,10 @@
 
 Contributors: aicragellebasi
 Donate link: http://www.isabellegarcia.me/contact
-Tags: blue, gray, orange, purple, white, brown, green, two-columns, one-column, left-sidebar, fixed-layout, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, rtl-language-support, sticky-post, threaded-comments, translation-ready, theme-options
+Tags: one-column, two-columns, three-columns, right-sidebar, grid-layout, custom-header, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, front-page-post-form, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog, education, entertainment, news
 Requires at least: 3.4
-Tested up to: 0.1
-Stable tag: 0.1
+Tested up to: 1.0.8
+Stable tag: 1.0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -125,4 +125,32 @@ This theme is built upon Bootstrap 3.
 * Choose form two page templates: When creating a new page, choose your template under Page Attribute:
 	1. Default template (with sidebar)
 	2. Full width page (without sidebar)
+
+== Changelog ==
+
+= 1.0.4 =
+* First release of IAMSocial
+
+= 1.0.5 =
+* Fixed the extra white space below the homepage footer on Safari and Chrome.
+* Fixed the 3 columns post bug on Safari and Chrome.
+* Made the RTL styles to load properly.
+* Updated the copyright.
+
+= 1.0.6 =
+* Logo, titles and subtitles aligned left on large screens. Stacked and centered on small screens.
+* Bootstrap less files updated to 3.3.7
+* Font Awesome less files and fonts updated to 4.6.3
+
+= 1.0.7 =
+* Fixed a typo
+* Fixed the sprintf funtion variables in the footer
+* Updated the tags in styles.css
+* Fixed missing text domain in esc_html_e function in header.php
+
+= 1.0.8 =
+* Metas at the bottom of the articles cleared. Issue with BBPress login.
+
+== Upgrade Notice ==
+
 
