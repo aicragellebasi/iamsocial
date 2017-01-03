@@ -22,7 +22,7 @@
 			</a> 
 			</figure>
 			<?php if ( is_single() || is_page() ) { the_content(); } else { the_excerpt(); ?>
-					<small class="clearfix readmore"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">Read More</a></small>
+					<small class="clearfix readmore"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php _e( 'Read More', 'iamsocial' ); ?></a></small>
 					<span class="screen-reader-text"><?php the_title(); ?></span>
 			<?php } ?>
 			<?php  if ( ! is_page() ) {  ?>
