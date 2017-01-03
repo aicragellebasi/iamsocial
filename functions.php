@@ -24,8 +24,8 @@ require_once( 'wp_bootstrap_navwalker.php' );
  * Enqueue scripts for the front end.
  */
 function iamsocial_scripts() {
-	wp_enqueue_style( 'style.css',  get_template_directory_uri().'/css/style.css', array() , '1.0.8' );
-	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '1.0.8', true );
+	wp_enqueue_style( 'style.css',  get_template_directory_uri().'/css/style.css', array() , '1.0.9' );
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '1.0.9', true );
 }
 add_action( 'wp_enqueue_scripts', 'iamsocial_scripts' );
 

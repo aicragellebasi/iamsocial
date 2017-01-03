@@ -4,8 +4,8 @@ Contributors: aicragellebasi
 Donate link: http://www.isabellegarcia.me/contact
 Tags: one-column, two-columns, three-columns, right-sidebar, grid-layout, custom-header, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, front-page-post-form, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog, education, entertainment, news
 Requires at least: 3.4
-Tested up to: 1.0.8
-Stable tag: 1.0.8
+Tested up to: 1.0.9
+Stable tag: 1.0.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -150,6 +150,10 @@ This theme is built upon Bootstrap 3.
 
 = 1.0.8 =
 * Metas at the bottom of the articles cleared. Issue with BBPress login.
+
+= 1.0.9 =
+* Wrapped Read More into translation function.
+* Changed the format of the Date to F j, Y.
 
 == Upgrade Notice ==
 

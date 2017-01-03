@@ -12,7 +12,7 @@
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage IAMSocial 1.0.8
+ * @subpackage IAMSocial 1.0.9
  * @since IAMSocial 1.0.0
  */
 ?>

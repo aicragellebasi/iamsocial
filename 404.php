@@ -3,7 +3,7 @@
  * The template for displaying 404 pages (Not Found)
  *
  * @package WordPress
- * @subpackage IAMSocial 1.0.8
+ * @subpackage IAMSocial 1.0.9
  * @since IAMSocial 1.0.0
  */
 ?>
