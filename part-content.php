@@ -27,7 +27,7 @@
 			<?php } ?>
 			<?php  if ( ! is_page() ) {  ?>
 				<div class="metas">
-					<small><i class="fa fa-calendar-o"></i> <?php the_time( 'F jS, Y' ) ?> </small><br>
+					<small><i class="fa fa-calendar-o"></i> <?php the_time( 'F j, Y' ) ?> </small><br>
 					<small class="postmetadata"><i class="fa fa-folder-open-o"></i> <?php esc_html_e( 'Posted in', 'iamsocial' ); ?> <?php the_category( ', ' ); ?></small><br>
 					<?php if ( has_tag() ) { ?>
 						<small><i class="fa fa-tags"></i> <?php the_tags(); ?></small>
