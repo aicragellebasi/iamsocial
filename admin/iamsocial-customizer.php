@@ -487,10 +487,10 @@ function iamsocial_load_css_colors() {
 				)
 		);
 		$css_id = get_theme_mod( 'css_sheet', 'blue' );
-		wp_enqueue_style( $css[ $css_id ]['file'], get_template_directory_uri().'/css/colors/'.$css[ $css_id ]['file'] );
-
+		wp_register_style( 'custom-color', get_template_directory_uri().'/css/colors/'.$css[ $css_id ]['file'] );
+		wp_enqueue_style( 'custom-color' );
 }
-add_action( 'wp_head', 'iamsocial_load_css_colors' );
+add_action( 'wp_enqueue_scripts', 'iamsocial_load_css_colors', 999);
 
 /*****************************
 IAMSocial General Settings.
