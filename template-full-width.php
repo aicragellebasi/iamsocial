@@ -5,7 +5,7 @@
  * Learn more: {@link https://developer.wordpress.org/themes/template-files-section/page-template-files/page-templates/}
  *
  * @package WordPress
- * @subpackage IAMSocial 1.0.9
+ * @subpackage IAMSocial 1.1.1
  * @since IAMSocial 1.0.0
  */
 ?>

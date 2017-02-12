@@ -5,7 +5,7 @@
  * Contains footer content and the closing of .container div opened in header.php
  *
  * @package WordPress
- * @subpackage IAMSocial 1.0.9
+ * @subpackage IAMSocial 1.1.1
  * @since IAMSocial 1.0.0
  */
 ?>

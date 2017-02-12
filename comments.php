@@ -5,7 +5,7 @@
  * The area of the page that contains comments and the comment form.
  *
  * @package WordPress
- * @subpackage IAMSocial 1.0.9
+ * @subpackage IAMSocial 1.1.1
  * @since IAMSocial 1.0.0
  */
 ?>

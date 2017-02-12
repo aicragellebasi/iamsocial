@@ -5,7 +5,7 @@
  * Displays all of the <head> section and everything up till <section>
  *
  * @package WordPress
- * @subpackage IAMSocial 1.0.9
+ * @subpackage IAMSocial 1.1.1
  * @since IAMSocial 1.0.0
  */
 ?>
